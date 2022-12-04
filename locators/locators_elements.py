@@ -1,10 +1,7 @@
 from selene.support.shared import browser
 
 
-
-
 class TestFormLocators:
-
     FIRSTNAME = browser.element('#firstName')
     LASTNAME = browser.element('#lastName')
     EMAIL = browser.element('#userEmail')

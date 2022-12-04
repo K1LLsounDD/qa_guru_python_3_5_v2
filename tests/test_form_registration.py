@@ -11,6 +11,7 @@ def test_student_registration_form():
     TestFormLocators.FIRSTNAME.type('Sergey')
     TestFormLocators.LASTNAME.type('Golichenko')
     TestFormLocators.EMAIL.type('example@.com')
+    TestFormLocators.GENDER_MEN.click()
     TestFormLocators.NUMBER.type('880055355')
 
     #birthday
