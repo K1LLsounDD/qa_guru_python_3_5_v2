@@ -1,4 +1,5 @@
 from selene.support.shared import browser
+from selene import have
 from locators.locators_elements import TestFormLocators
 import os
 
@@ -32,5 +33,9 @@ def test_student_registration_form():
 
     #adress
     TestFormLocators.Address.ADDRESS.type('улица Пушкина, Дом Колотушкина')
+    TestFormLocators.Address.STATE.click()
+    TestFormLocators.Address.STATE_VALUE.type('Haryana').press_enter()
+    TestFormLocators.Address.CITY.click()
+    TestFormLocators.Address.CITY_VALUE.type('Karnal').press_enter()
 
 
