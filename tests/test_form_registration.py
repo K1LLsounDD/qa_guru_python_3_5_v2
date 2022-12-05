@@ -8,29 +8,29 @@ def test_student_registration_form():
     browser.open('/automation-practice-form')
 
     #user's characters
-    TestFormLocators.FIRSTNAME.type('Sergey')
-    TestFormLocators.LASTNAME.type('Golichenko')
-    TestFormLocators.EMAIL.type('example@.com')
-    TestFormLocators.GENDER_MEN.click()
-    TestFormLocators.NUMBER.type('880055355')
+    TestFormLocators.UserCharacters.FIRSTNAME.type('Sergey')
+    TestFormLocators.UserCharacters.LASTNAME.type('Golichenko')
+    TestFormLocators.UserCharacters.EMAIL.type('example@.com')
+    TestFormLocators.UserCharacters.GENDER_MEN.click()
+    TestFormLocators.UserCharacters.NUMBER.type('880055355')
 
     #birthday
-    TestFormLocators.BIRTH_INPUT.click()
-    TestFormLocators.BIRTH_MONTH.click()
-    TestFormLocators.BIRTH_MONTH_VALUE.click()
-    TestFormLocators.BIRTH_YEAR.click()
-    TestFormLocators.BIRTH_YEAR_VALUE.click()
-    TestFormLocators.BIRTH_MONTH_DAY.click()
+    TestFormLocators.Birthday.BIRTH_INPUT.click()
+    TestFormLocators.Birthday.BIRTH_MONTH.click()
+    TestFormLocators.Birthday.BIRTH_MONTH_VALUE.click()
+    TestFormLocators.Birthday.BIRTH_YEAR.click()
+    TestFormLocators.Birthday.BIRTH_YEAR_VALUE.click()
+    TestFormLocators.Birthday.BIRTH_MONTH_DAY.click()
 
     #hobbies
-    TestFormLocators.SUBJECT.type('Maths').press_enter()
-    TestFormLocators.HOBBIES_SPORTS.click()
-    TestFormLocators.HOBBIES_MUSIC.click()
-    TestFormLocators.PICTURE_UPLOAD.set_value(os.path.abspath(os.path.join(
+    TestFormLocators.Hobbies.SUBJECT.type('Maths').press_enter()
+    TestFormLocators.Hobbies.HOBBIES_SPORTS.click()
+    TestFormLocators.Hobbies.HOBBIES_MUSIC.click()
+    TestFormLocators.Hobbies.PICTURE_UPLOAD.set_value(os.path.abspath(os.path.join(
     os.path.dirname(__file__), os.path.pardir, 'upload/AQA.png'
     )))
 
     #adress
-    TestFormLocators.ADDRESS.type('улица Пушкина, Дом Колотушкина')
+    TestFormLocators.Address.ADDRESS.type('улица Пушкина, Дом Колотушкина')
 
 
